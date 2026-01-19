@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DigitalHelper — Telegram-боты и сайты</title>
+  <style>
+    :root{--bg:#0b0d12;--card:#121724;--text:#e9ecf1;--muted:#a9b0bf;--accent:#7c5cff;--line:#232a3a;}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; background:linear-gradient(180deg,#0b0d12 0%, #0f1420 100%); color:var(--text)}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 16px 64px}
+    .top{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .brand{font-weight:700;letter-spacing:.2px}
+    .nav{display:flex;gap:12px;flex-wrap:wrap}
+    .nav a{padding:8px 10px;border:1px solid var(--line);border-radius:10px;color:var(--muted)}
+    .nav a:hover{border-color:#36415a;color:var(--text)}
+    .hero{margin-top:26px;padding:22px;border:1px solid var(--line);border-radius:16px;background:rgba(18,23,36,.7)}
+    .h1{font-size:34px;line-height:1.1;margin:0 0 10px}
+    .sub{color:var(--muted);margin:0 0 18px;font-size:16px;line-height:1.5}
+    .cta{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:11px 14px;border-radius:12px;border:1px solid var(--line);background:#0f1420}
+    .btn.primary{background:var(--accent);border-color:transparent;color:#fff;font-weight:700}
+    .btn:hover{transform:translateY(-1px)}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;margin-top:16px}
+    .card{grid-column:span 6;padding:16px;border:1px solid var(--line);border-radius:16px;background:rgba(18,23,36,.55)}
+    .card h3{margin:0 0 6px;font-size:16px}
+    .card p{margin:0;color:var(--muted);line-height:1.5}
+    .section{margin-top:26px}
+    .section h2{margin:0 0 10px;font-size:20px}
+    .list{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+    .item{grid-column:span 4;padding:14px;border:1px solid var(--line);border-radius:16px;background:rgba(18,23,36,.45)}
+    .tag{display:inline-block;font-size:12px;color:#dfe3ee;background:rgba(124,92,255,.15);border:1px solid rgba(124,92,255,.35);padding:4px 8px;border-radius:999px;margin-bottom:8px}
+    .muted{color:var(--muted)}
+    .footer{margin-top:30px;color:var(--muted);font-size:13px}
+    @media (max-width:820px){
+      .card{grid-column:span 12}
+      .item{grid-column:span 12}
+      .h1{font-size:28px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">DigitalHelper · Telegram-боты · сайты · автоматизация</div>
+      <div class="nav">
+        <a href="#services">Услуги</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#prices">Цены</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <h1 class="h1">Делаем Telegram-ботов и простые сайты для бизнеса</h1>
+      <p class="sub">
+        Быстро запускаю решения “под ключ”: заявки, запись, каталог, автоответы, интеграции.
+        Использую современные AI-инструменты, поэтому сроки и цена ниже, чем у классической разработки.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="https://t.me/USERNAME_ТУТ" target="_blank">Написать в Telegram</a>
+        <a class="btn" href="#portfolio">Смотреть кейсы</a>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Что получаете</h3>
+          <p>Рабочий бот/сайт, инструкции, помощь с запуском и небольшие правки после сдачи.</p>
+        </div>
+        <div class="card">
+          <h3>Формат работы</h3>
+          <p>Быстрый бриф → прототип → согласование → разработка → тест → запуск.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="services" class="section">
+      <h2>Услуги</h2>
+      <div class="list">
+        <div class="item">
+          <div class="tag">Telegram</div>
+          <strong>Telegram-боты</strong>
+          <div class="muted">Запись, заявки, поддержка, магазины, рассылки, админ-панель (по задаче).</div>
+        </div><div class="item">
+          <div class="tag">Web</div>
+          <strong>Сайты</strong>
+          <div class="muted">Лендинг/визитка, форма заявки, подключение домена, базовая SEO-настройка.</div>
+        </div>
+        <div class="item">
+          <div class="tag">Automation</div>
+          <strong>Автоматизация</strong>
+          <div class="muted">Скрипты на Python, парсинг, отчеты, интеграции, “рутина в 1 клик”.</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio" class="section">
+      <h2>Портфолио</h2>
+      <div class="list">
+        <div class="item">
+          <div class="tag">Кейс 1</div>
+          <strong>Бот для записи клиентов</strong>
+          <div class="muted">
+            Функции: выбор услуги → время → подтверждение → уведомление админа → база заявок.
+          </div>
+        </div>
+        <div class="item">
+          <div class="tag">Кейс 2</div>
+          <strong>Бот-магазин</strong>
+          <div class="muted">
+            Каталог, карточки, корзина, оформление заказа, уведомления менеджеру.
+          </div>
+        </div>
+        <div class="item">
+          <div class="tag">Кейс 3</div>
+          <strong>Бот поддержки / FAQ</strong>
+          <div class="muted">
+            Автоответы, сценарии, сбор контактов, перевод на оператора.
+          </div>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:10px">
+        (Когда сделаешь 1–2 реальных заказа — заменим описания на реальные ссылки/скриншоты.)
+      </p>
+    </div>
+
+    <div id="prices" class="section">
+      <h2>Цены (старт)</h2>
+      <div class="list">
+        <div class="item">
+          <strong>Простой бот</strong>
+          <div class="muted">от 3 000 ₽ · 1–2 дня</div>
+        </div>
+        <div class="item">
+          <strong>Бот средний</strong>
+          <div class="muted">5 000–10 000 ₽ · 2–5 дней</div>
+        </div>
+        <div class="item">
+          <strong>Лендинг/визитка</strong>
+          <div class="muted">от 5 000 ₽ · 1–3 дня</div>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:10px">
+        Точная цена — после 5–10 минут вопросов по задаче.
+      </p>
+    </div>
+
+    <div id="contacts" class="section">
+      <h2>Контакты</h2>
+      <div class="list">
+        <div class="item">
+          <strong>Telegram</strong>
+          <div class="muted"><a href="https://t.me/USERNAME_ТУТ" target="_blank">@USERNAME_ТУТ</a></div>
+        </div>
+        <div class="item">
+          <strong>Email</strong>
+          <div class="muted">youremail@example.com</div>
+        </div>
+        <div class="item">
+          <strong>Часовой пояс</strong>
+          <div class="muted">МСК (UTC+3)</div>
+        </div>
+      </div>
+      <div class="footer">© <span id="y"></span> Амир. Быстрая разработка для бизнеса.</div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
